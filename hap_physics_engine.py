@@ -201,14 +201,14 @@ def main():
     # m_tendons                    # total mass of tendons of the net               (kg)
 
     # Payload data
-    m_p  = 8.3                   # payload                                        (kg)
+    m_p  = 8                     # payload                                        (kg)
     S_p  = 0.16                  # payload drag area                              (m^2)
     Cd_p = 0.25                  # payload drag cefficient
 
     # Pump data
     N_pump          = 6             # number of pumps                                
     N_pumps_on      = 3             # number of pumps running at a time
-    m_pump       = 0.544            # weight of one pump                             (kg)
+    m_pump       = 0.5            # weight of one pump                             (kg)
 
     #     P_diff_pump  = 8000          # maximum differential pressure of the pump      (Pa)
     # m_pump_all                   # weight of all pumps                            (kg)
@@ -273,9 +273,9 @@ def main():
     vz   = 0                       # current velocity along z                       (m/s) 
     v_0  = 0                       # previous velocity                              (m/s)
     v    = 0                       # current velocity                               (m/s)
-    h0   = 10                   # 1120  24000  # initial altitude                 ( < 36000 )   (m)
+    h0   = 1000                    # 1120  24000  # initial altitude                 ( < 36000 )   (m)
     h_max= 25000                   # the max altitude to stop ascent  ( < 36000 )   (km)
-    h_min= 0                   # the min altitude to stop descent ( < 36000 )   (km)
+    h_min= 0                       # the min altitude to stop descent ( < 36000 )   (km)
     x_0  = 0                       # previous x coordinate (East)                   (m)
     y_0  = 0                       # previous y coordinate (North)                  (m) 
     z_0  = h0                      # initial/previous z coordinate (altitude)       (m) 
@@ -339,7 +339,7 @@ def main():
     m_bl = ro_f * S_bl * d_f
     m_pump_all    = N_pump * m_pump
     m_net    = m_p + m_b + m_bl + m_pump_all # overall net mass                   (kg)
-
+    
     if k_He_H2 == 1:
         mu_gas = 4      
     else:
@@ -357,7 +357,6 @@ def main():
     
     mu_  = mu_gas/mu_air
     xmu_gas = R_id / mu_gas
-    print(len(Hatm))
     for n in range(0, 23):       
         if (h_max > Hatm[n]):
             i_max = n
@@ -594,6 +593,10 @@ def main():
         Fd_z = Cd_z * (rho_atm * vz * abs(vz) / 2) * Sb_drag
     
         a_z  = (Fa - Fg - Fd_z) / m
+        # if t < 10:
+            
+        #     print(t, " ", a_z)
+        
         dvz  = a_z * dt
         vz_0 = vz
         vz   = vz + dvz
@@ -639,7 +642,7 @@ def main():
         mg   = Pg * m
         
         t = t + dt
-        
+
         if ((t - t0) >= dt_pr):
             
             t0 = t
@@ -651,8 +654,9 @@ def main():
             info_row = {'Altitude': z, 'vx': vx, 'vy': vy, 'mgas': m_gas}
             latlon_to_csv = latlon_to_csv.append(new_row, ignore_index=True)
             flight_info = flight_info.append(info_row, ignore_index=True)
-    latlon_to_csv.to_csv("flight1.csv", index=False)
-    flight_info.to_csv("flight_info1.csv", index=False)
+    
+    latlon_to_csv.to_csv("flight2.csv", index=False)
+    flight_info.to_csv("flight_info2.csv", index=False)
     return
 
 if __name__ == "__main__":
@@ -660,7 +664,7 @@ if __name__ == "__main__":
 
 
 
-
+# V
 
 # 40.23822423742247,44.5079306954846
 # 40.238809862507416,44.51110169829215
