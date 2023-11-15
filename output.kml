@@ -1,802 +1,167 @@
 <?xml version="1.0" encoding="UTF-8"?>
-    <kml xmlns="http://www.opengis.net/kml/2.2">
-      <Document>
-        <name>GPS Data</name>
-
-        <!-- Define a style for red points -->
-        <Style id="redPoint">
-          <IconStyle>
-            <color>ff0000ff</color> <!-- Red color (in ABGR format) -->
-            <scale>1.0</scale>
-            <Icon>
-              <href>http://maps.google.com/mapfiles/ms/icons/red-dot.png</href>
-            </Icon>
-          </IconStyle>
-        </Style>
-        
-        <Placemark>
-          <styleUrl>#redPoint</styleUrl>
-          <Point><altitudeMode>absolute</altitudeMode><extrude>1</extrude>
-
-            <coordinates>44.50680613996225,40.23888393939708,1109.953253828899</coordinates>
-          </Point>
-          <altitudeMode>absolute</altitudeMode>
-        </Placemark>
-        
-        <Placemark>
-          <styleUrl>#redPoint</styleUrl>
-          <Point><altitudeMode>absolute</altitudeMode><extrude>1</extrude>
-
-            <coordinates>44.50801984543454,40.23917034121475,1225.6151928666648</coordinates>
-          </Point>
-          <altitudeMode>absolute</altitudeMode>
-        </Placemark>
-        
-        <Placemark>
-          <styleUrl>#redPoint</styleUrl>
-          <Point><altitudeMode>absolute</altitudeMode><extrude>1</extrude>
-
-            <coordinates>44.50947118436161,40.23945857284989,1341.9585052273744</coordinates>
-          </Point>
-          <altitudeMode>absolute</altitudeMode>
-        </Placemark>
-        
-        <Placemark>
-          <styleUrl>#redPoint</styleUrl>
-          <Point><altitudeMode>absolute</altitudeMode><extrude>1</extrude>
-
-            <coordinates>44.511166649515864,40.23975052836028,1458.9711471851806</coordinates>
-          </Point>
-          <altitudeMode>absolute</altitudeMode>
-        </Placemark>
-        
-        <Placemark>
-          <styleUrl>#redPoint</styleUrl>
-          <Point><altitudeMode>absolute</altitudeMode><extrude>1</extrude>
-
-            <coordinates>44.51329661497907,40.240101760406276,1576.6632622066372</coordinates>
-          </Point>
-          <altitudeMode>absolute</altitudeMode>
-        </Placemark>
-        
-        <Placemark>
-          <styleUrl>#redPoint</styleUrl>
-          <Point><altitudeMode>absolute</altitudeMode><extrude>1</extrude>
-
-            <coordinates>44.51642166026221,40.24067585881525,1695.0533630776256</coordinates>
-          </Point>
-          <altitudeMode>absolute</altitudeMode>
-        </Placemark>
-        
-        <Placemark>
-          <styleUrl>#redPoint</styleUrl>
-          <Point><altitudeMode>absolute</altitudeMode><extrude>1</extrude>
-
-            <coordinates>44.52056835582174,40.24147992613306,1814.1504389478848</coordinates>
-          </Point>
-          <altitudeMode>absolute</altitudeMode>
-        </Placemark>
-        
-        <Placemark>
-          <styleUrl>#redPoint</styleUrl>
-          <Point><altitudeMode>absolute</altitudeMode><extrude>1</extrude>
-
-            <coordinates>44.525724107559476,40.24250870773295,1933.9625241958959</coordinates>
-          </Point>
-          <altitudeMode>absolute</altitudeMode>
-        </Placemark>
-        
-        <Placemark>
-          <styleUrl>#redPoint</styleUrl>
-          <Point><altitudeMode>absolute</altitudeMode><extrude>1</extrude>
-
-            <coordinates>44.53182172605912,40.24374053251898,2054.4982087733274</coordinates>
-          </Point>
-          <altitudeMode>absolute</altitudeMode>
-        </Placemark>
-        
-        <Placemark>
-          <styleUrl>#redPoint</styleUrl>
-          <Point><altitudeMode>absolute</altitudeMode><extrude>1</extrude>
-
-            <coordinates>44.5384592603609,40.245059212845185,2175.7693870323224</coordinates>
-          </Point>
-          <altitudeMode>absolute</altitudeMode>
-        </Placemark>
-        
-        <Placemark>
-          <styleUrl>#redPoint</styleUrl>
-          <Point><altitudeMode>absolute</altitudeMode><extrude>1</extrude>
-
-            <coordinates>44.54555641029936,40.2464424217404,2297.7853937723025</coordinates>
-          </Point>
-          <altitudeMode>absolute</altitudeMode>
-        </Placemark>
-        
-        <Placemark>
-          <styleUrl>#redPoint</styleUrl>
-          <Point><altitudeMode>absolute</altitudeMode><extrude>1</extrude>
-
-            <coordinates>44.55311090536525,40.247890381168126,2420.5548967272425</coordinates>
-          </Point>
-          <altitudeMode>absolute</altitudeMode>
-        </Placemark>
-        
-        <Placemark>
-          <styleUrl>#redPoint</styleUrl>
-          <Point><altitudeMode>absolute</altitudeMode><extrude>1</extrude>
-
-            <coordinates>44.5611160713792,40.24940047778046,2544.087567904897</coordinates>
-          </Point>
-          <altitudeMode>absolute</altitudeMode>
-        </Placemark>
-        
-        <Placemark>
-          <styleUrl>#redPoint</styleUrl>
-          <Point><altitudeMode>absolute</altitudeMode><extrude>1</extrude>
-
-            <coordinates>44.56913973252655,40.25069998234799,2668.404209914525</coordinates>
-          </Point>
-          <altitudeMode>absolute</altitudeMode>
-        </Placemark>
-        
-        <Placemark>
-          <styleUrl>#redPoint</styleUrl>
-          <Point><altitudeMode>absolute</altitudeMode><extrude>1</extrude>
-
-            <coordinates>44.57690782453068,40.25161291833355,2793.5181084772976</coordinates>
-          </Point>
-          <altitudeMode>absolute</altitudeMode>
-        </Placemark>
-        
-        <Placemark>
-          <styleUrl>#redPoint</styleUrl>
-          <Point><altitudeMode>absolute</altitudeMode><extrude>1</extrude>
-
-            <coordinates>44.584425223241816,40.25213917691717,2919.4389960204344</coordinates>
-          </Point>
-          <altitudeMode>absolute</altitudeMode>
-        </Placemark>
-        
-        <Placemark>
-          <styleUrl>#redPoint</styleUrl>
-          <Point><altitudeMode>absolute</altitudeMode><extrude>1</extrude>
-
-            <coordinates>44.59169659662604,40.25227870240442,3046.1776687875285</coordinates>
-          </Point>
-          <altitudeMode>absolute</altitudeMode>
-        </Placemark>
-        
-        <Placemark>
-          <styleUrl>#redPoint</styleUrl>
-          <Point><altitudeMode>absolute</altitudeMode><extrude>1</extrude>
-
-            <coordinates>44.59892708252856,40.252074603480196,3173.756133797258</coordinates>
-          </Point>
-          <altitudeMode>absolute</altitudeMode>
-        </Placemark>
-        
-        <Placemark>
-          <styleUrl>#redPoint</styleUrl>
-          <Point><altitudeMode>absolute</altitudeMode><extrude>1</extrude>
-
-            <coordinates>44.60675786723027,40.251666091196014,3302.188758596835</coordinates>
-          </Point>
-          <altitudeMode>absolute</altitudeMode>
-        </Placemark>
-        
-        <Placemark>
-          <styleUrl>#redPoint</styleUrl>
-          <Point><altitudeMode>absolute</altitudeMode><extrude>1</extrude>
-
-            <coordinates>44.61522565570301,40.25106519553452,3431.4864177294367</coordinates>
-          </Point>
-          <altitudeMode>absolute</altitudeMode>
-        </Placemark>
-        
-        <Placemark>
-          <styleUrl>#redPoint</styleUrl>
-          <Point><altitudeMode>absolute</altitudeMode><extrude>1</extrude>
-
-            <coordinates>44.62431775623043,40.25027368979885,3561.660185525197</coordinates>
-          </Point>
-          <altitudeMode>absolute</altitudeMode>
-        </Placemark>
-        
-        <Placemark>
-          <styleUrl>#redPoint</styleUrl>
-          <Point><altitudeMode>absolute</altitudeMode><extrude>1</extrude>
-
-            <coordinates>44.634020788538805,40.249294013730236,3692.7213408071652</coordinates>
-          </Point>
-          <altitudeMode>absolute</altitudeMode>
-        </Placemark>
-        
-        <Placemark>
-          <styleUrl>#redPoint</styleUrl>
-          <Point><altitudeMode>absolute</altitudeMode><extrude>1</extrude>
-
-            <coordinates>44.64429277542013,40.24818737828801,3824.6813717285977</coordinates>
-          </Point>
-          <altitudeMode>absolute</altitudeMode>
-        </Placemark>
-        
-        <Placemark>
-          <styleUrl>#redPoint</styleUrl>
-          <Point><altitudeMode>absolute</altitudeMode><extrude>1</extrude>
-
-            <coordinates>44.655105044261624,40.24699649785376,3957.551980746386</coordinates>
-          </Point>
-          <altitudeMode>absolute</altitudeMode>
-        </Placemark>
-        
-        <Placemark>
-          <styleUrl>#redPoint</styleUrl>
-          <Point><altitudeMode>absolute</altitudeMode><extrude>1</extrude>
-
-            <coordinates>44.666449953039105,40.24572360714651,4091.350913994661</coordinates>
-          </Point>
-          <altitudeMode>absolute</altitudeMode>
-        </Placemark>
-        
-        <Placemark>
-          <styleUrl>#redPoint</styleUrl>
-          <Point><altitudeMode>absolute</altitudeMode><extrude>1</extrude>
-
-            <coordinates>44.67831970025279,40.244371026376996,4226.110961369292</coordinates>
-          </Point>
-          <altitudeMode>absolute</altitudeMode>
-        </Placemark>
-        
-        <Placemark>
-          <styleUrl>#redPoint</styleUrl>
-          <Point><altitudeMode>absolute</altitudeMode><extrude>1</extrude>
-
-            <coordinates>44.69069124624312,40.24293507217974,4361.847063593426</coordinates>
-          </Point>
-          <altitudeMode>absolute</altitudeMode>
-        </Placemark>
-        
-        <Placemark>
-          <styleUrl>#redPoint</styleUrl>
-          <Point><altitudeMode>absolute</altitudeMode><extrude>1</extrude>
-
-            <coordinates>44.70341067523953,40.24135469465262,4498.572665200693</coordinates>
-          </Point>
-          <altitudeMode>absolute</altitudeMode>
-        </Placemark>
-        
-        <Placemark>
-          <styleUrl>#redPoint</styleUrl>
-          <Point><altitudeMode>absolute</altitudeMode><extrude>1</extrude>
-
-            <coordinates>44.7164411586773,40.23960711294587,4636.301477969273</coordinates>
-          </Point>
-          <altitudeMode>absolute</altitudeMode>
-        </Placemark>
-        
-        <Placemark>
-          <styleUrl>#redPoint</styleUrl>
-          <Point><altitudeMode>absolute</altitudeMode><extrude>1</extrude>
-
-            <coordinates>44.72978456589506,40.2376842643289,4775.047487730433</coordinates>
-          </Point>
-          <altitudeMode>absolute</altitudeMode>
-        </Placemark>
-        
-        <Placemark>
-          <styleUrl>#redPoint</styleUrl>
-          <Point><altitudeMode>absolute</altitudeMode><extrude>1</extrude>
-
-            <coordinates>44.74344276544995,40.23557811567946,4914.824961383194</coordinates>
-          </Point>
-          <altitudeMode>absolute</altitudeMode>
-        </Placemark>
-        
-        <Placemark>
-          <styleUrl>#redPoint</styleUrl>
-          <Point><altitudeMode>absolute</altitudeMode><extrude>1</extrude>
-
-            <coordinates>44.75740159422521,40.23328862760604,5055.650673017752</coordinates>
-          </Point>
-          <altitudeMode>absolute</altitudeMode>
-        </Placemark>
-        
-        <Placemark>
-          <styleUrl>#redPoint</styleUrl>
-          <Point><altitudeMode>absolute</altitudeMode><extrude>1</extrude>
-
-            <coordinates>44.77157389104667,40.230851288658634,5197.56507747722</coordinates>
-          </Point>
-          <altitudeMode>absolute</altitudeMode>
-        </Placemark>
-        
-        <Placemark>
-          <styleUrl>#redPoint</styleUrl>
-          <Point><altitudeMode>absolute</altitudeMode><extrude>1</extrude>
-
-            <coordinates>44.78595120633459,40.228262712550524,5340.59158758964</coordinates>
-          </Point>
-          <altitudeMode>absolute</altitudeMode>
-        </Placemark>
-        
-        <Placemark>
-          <styleUrl>#redPoint</styleUrl>
-          <Point><altitudeMode>absolute</altitudeMode><extrude>1</extrude>
-
-            <coordinates>44.80053680968413,40.22551316974079,5484.722671545441</coordinates>
-          </Point>
-          <altitudeMode>absolute</altitudeMode>
-        </Placemark>
-        
-        <Placemark>
-          <styleUrl>#redPoint</styleUrl>
-          <Point><altitudeMode>absolute</altitudeMode><extrude>1</extrude>
-
-            <coordinates>44.815338587973955,40.22259220338988,5629.99900368893</coordinates>
-          </Point>
-          <altitudeMode>absolute</altitudeMode>
-        </Placemark>
-        
-        <Placemark>
-          <styleUrl>#redPoint</styleUrl>
-          <Point><altitudeMode>absolute</altitudeMode><extrude>1</extrude>
-
-            <coordinates>44.830359105914376,40.21950829035883,5776.43788445322</coordinates>
-          </Point>
-          <altitudeMode>absolute</altitudeMode>
-        </Placemark>
-        
-        <Placemark>
-          <styleUrl>#redPoint</styleUrl>
-          <Point><altitudeMode>absolute</altitudeMode><extrude>1</extrude>
-
-            <coordinates>44.845583709969326,40.21638655803779,5924.056991218688</coordinates>
-          </Point>
-          <altitudeMode>absolute</altitudeMode>
-        </Placemark>
-        
-        <Placemark>
-          <styleUrl>#redPoint</styleUrl>
-          <Point><altitudeMode>absolute</altitudeMode><extrude>1</extrude>
-
-            <coordinates>44.861011088752,40.213266489293495,6072.8781959797725</coordinates>
-          </Point>
-          <altitudeMode>absolute</altitudeMode>
-        </Placemark>
-        
-        <Placemark>
-          <styleUrl>#redPoint</styleUrl>
-          <Point><altitudeMode>absolute</altitudeMode><extrude>1</extrude>
-
-            <coordinates>44.87664337496346,40.21016499594761,6222.948648775803</coordinates>
-          </Point>
-          <altitudeMode>absolute</altitudeMode>
-        </Placemark>
-        
-        <Placemark>
-          <styleUrl>#redPoint</styleUrl>
-          <Point><altitudeMode>absolute</altitudeMode><extrude>1</extrude>
-
-            <coordinates>44.89248277564291,40.20709871443046,6374.294283447427</coordinates>
-          </Point>
-          <altitudeMode>absolute</altitudeMode>
-        </Placemark>
-        
-        <Placemark>
-          <styleUrl>#redPoint</styleUrl>
-          <Point><altitudeMode>absolute</altitudeMode><extrude>1</extrude>
-
-            <coordinates>44.90853517168343,40.20408235475721,6526.935725424876</coordinates>
-          </Point>
-          <altitudeMode>absolute</altitudeMode>
-        </Placemark>
-        
-        <Placemark>
-          <styleUrl>#redPoint</styleUrl>
-          <Point><altitudeMode>absolute</altitudeMode><extrude>1</extrude>
-
-            <coordinates>44.924894314500015,40.20108627537071,6680.894081927134</coordinates>
-          </Point>
-          <altitudeMode>absolute</altitudeMode>
-        </Placemark>
-        
-        <Placemark>
-          <styleUrl>#redPoint</styleUrl>
-          <Point><altitudeMode>absolute</altitudeMode><extrude>1</extrude>
-
-            <coordinates>44.9415986000583,40.198095029790245,6836.190956394179</coordinates>
-          </Point>
-          <altitudeMode>absolute</altitudeMode>
-        </Placemark>
-        
-        <Placemark>
-          <styleUrl>#redPoint</styleUrl>
-          <Point><altitudeMode>absolute</altitudeMode><extrude>1</extrude>
-
-            <coordinates>44.958645232982214,40.19511027612188,6992.848463433218</coordinates>
-          </Point>
-          <altitudeMode>absolute</altitudeMode>
-        </Placemark>
-        
-        <Placemark>
-          <styleUrl>#redPoint</styleUrl>
-          <Point><altitudeMode>absolute</altitudeMode><extrude>1</extrude>
-
-            <coordinates>44.976031345943746,40.19213377622514,7150.908593466761</coordinates>
-          </Point>
-          <altitudeMode>absolute</altitudeMode>
-        </Placemark>
-        
-        <Placemark>
-          <styleUrl>#redPoint</styleUrl>
-          <Point><altitudeMode>absolute</altitudeMode><extrude>1</extrude>
-
-            <coordinates>44.99375406574978,40.18916739513202,7310.422545749006</coordinates>
-          </Point>
-          <altitudeMode>absolute</altitudeMode>
-        </Placemark>
-        
-        <Placemark>
-          <styleUrl>#redPoint</styleUrl>
-          <Point><altitudeMode>absolute</altitudeMode><extrude>1</extrude>
-
-            <coordinates>45.01183523782466,40.18618874118428,7471.416029990015</coordinates>
-          </Point>
-          <altitudeMode>absolute</altitudeMode>
-        </Placemark>
-        
-        <Placemark>
-          <styleUrl>#redPoint</styleUrl>
-          <Point><altitudeMode>absolute</altitudeMode><extrude>1</extrude>
-
-            <coordinates>45.03031963627975,40.18314440614472,7633.915173226789</coordinates>
-          </Point>
-          <altitudeMode>absolute</altitudeMode>
-        </Placemark>
-        
-        <Placemark>
-          <styleUrl>#redPoint</styleUrl>
-          <Point><altitudeMode>absolute</altitudeMode><extrude>1</extrude>
-
-            <coordinates>45.04918727459323,40.18003311397337,7797.946768850596</coordinates>
-          </Point>
-          <altitudeMode>absolute</altitudeMode>
-        </Placemark>
-        
-        <Placemark>
-          <styleUrl>#redPoint</styleUrl>
-          <Point><altitudeMode>absolute</altitudeMode><extrude>1</extrude>
-
-            <coordinates>45.06841566531019,40.17685533482737,7963.538298394737</coordinates>
-          </Point>
-          <altitudeMode>absolute</altitudeMode>
-        </Placemark>
-        
-        <Placemark>
-          <styleUrl>#redPoint</styleUrl>
-          <Point><altitudeMode>absolute</altitudeMode><extrude>1</extrude>
-
-            <coordinates>45.08798300044713,40.17361114978101,8131.746591763112</coordinates>
-          </Point>
-          <altitudeMode>absolute</altitudeMode>
-        </Placemark>
-        
-        <Placemark>
-          <styleUrl>#redPoint</styleUrl>
-          <Point><altitudeMode>absolute</altitudeMode><extrude>1</extrude>
-
-            <coordinates>45.10787206026263,40.17029918166411,8305.32569352994</coordinates>
-          </Point>
-          <altitudeMode>absolute</altitudeMode>
-        </Placemark>
-        
-        <Placemark>
-          <styleUrl>#redPoint</styleUrl>
-          <Point><altitudeMode>absolute</altitudeMode><extrude>1</extrude>
-
-            <coordinates>45.12805177062775,40.16691290024305,8484.639288410852</coordinates>
-          </Point>
-          <altitudeMode>absolute</altitudeMode>
-        </Placemark>
-        
-        <Placemark>
-          <styleUrl>#redPoint</styleUrl>
-          <Point><altitudeMode>absolute</altitudeMode><extrude>1</extrude>
-
-            <coordinates>45.14851873851802,40.163443151610565,8669.931536433238</coordinates>
-          </Point>
-          <altitudeMode>absolute</altitudeMode>
-        </Placemark>
-        
-        <Placemark>
-          <styleUrl>#redPoint</styleUrl>
-          <Point><altitudeMode>absolute</altitudeMode><extrude>1</extrude>
-
-            <coordinates>45.16929191857928,40.15988273488011,8861.464011977849</coordinates>
-          </Point>
-          <altitudeMode>absolute</altitudeMode>
-        </Placemark>
-        
-        <Placemark>
-          <styleUrl>#redPoint</styleUrl>
-          <Point><altitudeMode>absolute</altitudeMode><extrude>1</extrude>
-
-            <coordinates>45.19038922528708,40.156225000003346,9056.982174403434</coordinates>
-          </Point>
-          <altitudeMode>absolute</altitudeMode>
-        </Placemark>
-        
-        <Placemark>
-          <styleUrl>#redPoint</styleUrl>
-          <Point><altitudeMode>absolute</altitudeMode><extrude>1</extrude>
-
-            <coordinates>45.211821317826306,40.15246591558147,9252.559065698297</coordinates>
-          </Point>
-          <altitudeMode>absolute</altitudeMode>
-        </Placemark>
-        
-        <Placemark>
-          <styleUrl>#redPoint</styleUrl>
-          <Point><altitudeMode>absolute</altitudeMode><extrude>1</extrude>
-
-            <coordinates>45.23361450510656,40.148620377953385,9448.160945746757</coordinates>
-          </Point>
-          <altitudeMode>absolute</altitudeMode>
-        </Placemark>
-        
-        <Placemark>
-          <styleUrl>#redPoint</styleUrl>
-          <Point><altitudeMode>absolute</altitudeMode><extrude>1</extrude>
-
-            <coordinates>45.25587418304956,40.14478949173679,9642.488299543413</coordinates>
-          </Point>
-          <altitudeMode>absolute</altitudeMode>
-        </Placemark>
-        
-        <Placemark>
-          <styleUrl>#redPoint</styleUrl>
-          <Point><altitudeMode>absolute</altitudeMode><extrude>1</extrude>
-
-            <coordinates>45.278587921380485,40.14099983273434,9834.414982925826</coordinates>
-          </Point>
-          <altitudeMode>absolute</altitudeMode>
-        </Placemark>
-        
-        <Placemark>
-          <styleUrl>#redPoint</styleUrl>
-          <Point><altitudeMode>absolute</altitudeMode><extrude>1</extrude>
-
-            <coordinates>45.30173550382935,40.13725377480714,10023.734183838436</coordinates>
-          </Point>
-          <altitudeMode>absolute</altitudeMode>
-        </Placemark>
-        
-        <Placemark>
-          <styleUrl>#redPoint</styleUrl>
-          <Point><altitudeMode>absolute</altitudeMode><extrude>1</extrude>
-
-            <coordinates>45.325305353776024,40.133549597929424,10213.139655252171</coordinates>
-          </Point>
-          <altitudeMode>absolute</altitudeMode>
-        </Placemark>
-        
-        <Placemark>
-          <styleUrl>#redPoint</styleUrl>
-          <Point><altitudeMode>absolute</altitudeMode><extrude>1</extrude>
-
-            <coordinates>45.34929340240588,40.12988632759515,10404.81911356496</coordinates>
-          </Point>
-          <altitudeMode>absolute</altitudeMode>
-        </Placemark>
-        
-        <Placemark>
-          <styleUrl>#redPoint</styleUrl>
-          <Point><altitudeMode>absolute</altitudeMode><extrude>1</extrude>
-
-            <coordinates>45.373680201531734,40.12626921506352,10598.82595902285</coordinates>
-          </Point>
-          <altitudeMode>absolute</altitudeMode>
-        </Placemark>
-        
-        <Placemark>
-          <styleUrl>#redPoint</styleUrl>
-          <Point><altitudeMode>absolute</altitudeMode><extrude>1</extrude>
-
-            <coordinates>45.39814846266821,40.12280295799138,10794.39491625482</coordinates>
-          </Point>
-          <altitudeMode>absolute</altitudeMode>
-        </Placemark>
-        
-        <Placemark>
-          <styleUrl>#redPoint</styleUrl>
-          <Point><altitudeMode>absolute</altitudeMode><extrude>1</extrude>
-
-            <coordinates>45.42257416268329,40.119517354183216,10989.965784089653</coordinates>
-          </Point>
-          <altitudeMode>absolute</altitudeMode>
-        </Placemark>
-        
-        <Placemark>
-          <styleUrl>#redPoint</styleUrl>
-          <Point><altitudeMode>absolute</altitudeMode><extrude>1</extrude>
-
-            <coordinates>45.44695162862142,40.116400320875464,11185.488229407783</coordinates>
-          </Point>
-          <altitudeMode>absolute</altitudeMode>
-        </Placemark>
-        
-        <Placemark>
-          <styleUrl>#redPoint</styleUrl>
-          <Point><altitudeMode>absolute</altitudeMode><extrude>1</extrude>
-
-            <coordinates>45.47127554489491,40.11344013520601,11380.953965421104</coordinates>
-          </Point>
-          <altitudeMode>absolute</altitudeMode>
-        </Placemark>
-        
-        <Placemark>
-          <styleUrl>#redPoint</styleUrl>
-          <Point><altitudeMode>absolute</altitudeMode><extrude>1</extrude>
-
-            <coordinates>45.495540944013534,40.11062549652611,11576.361078599853</coordinates>
-          </Point>
-          <altitudeMode>absolute</altitudeMode>
-        </Placemark>
-        
-        <Placemark>
-          <styleUrl>#redPoint</styleUrl>
-          <Point><altitudeMode>absolute</altitudeMode><extrude>1</extrude>
-
-            <coordinates>45.5197386991158,40.107944431567994,11771.707616863898</coordinates>
-          </Point>
-          <altitudeMode>absolute</altitudeMode>
-        </Placemark>
-        
-        <Placemark>
-          <styleUrl>#redPoint</styleUrl>
-          <Point><altitudeMode>absolute</altitudeMode><extrude>1</extrude>
-
-            <coordinates>45.543855014039885,40.10538050526429,11966.99164185284</coordinates>
-          </Point>
-          <altitudeMode>absolute</altitudeMode>
-        </Placemark>
-        
-        <Placemark>
-          <styleUrl>#redPoint</styleUrl>
-          <Point><altitudeMode>absolute</altitudeMode><extrude>1</extrude>
-
-            <coordinates>45.56764844791468,40.102767389294556,12162.211018176615</coordinates>
-          </Point>
-          <altitudeMode>absolute</altitudeMode>
-        </Placemark>
-        
-        <Placemark>
-          <styleUrl>#redPoint</styleUrl>
-          <Point><altitudeMode>absolute</altitudeMode><extrude>1</extrude>
-
-            <coordinates>45.59094643386829,40.09998334329346,12357.363538817004</coordinates>
-          </Point>
-          <altitudeMode>absolute</altitudeMode>
-        </Placemark>
-        
-        <Placemark>
-          <styleUrl>#redPoint</styleUrl>
-          <Point><altitudeMode>absolute</altitudeMode><extrude>1</extrude>
-
-            <coordinates>45.61377414849288,40.09703282542933,12552.447035051522</coordinates>
-          </Point>
-          <altitudeMode>absolute</altitudeMode>
-        </Placemark>
-        
-        <Placemark>
-          <styleUrl>#redPoint</styleUrl>
-          <Point><altitudeMode>absolute</altitudeMode><extrude>1</extrude>
-
-            <coordinates>45.636155539655405,40.09392016047117,12747.459207077836</coordinates>
-          </Point>
-          <altitudeMode>absolute</altitudeMode>
-        </Placemark>
-        
-        <Placemark>
-          <styleUrl>#redPoint</styleUrl>
-          <Point><altitudeMode>absolute</altitudeMode><extrude>1</extrude>
-
-            <coordinates>45.65811329290538,40.09064951153842,12942.397741831546</coordinates>
-          </Point>
-          <altitudeMode>absolute</altitudeMode>
-        </Placemark>
-        
-        <Placemark>
-          <styleUrl>#redPoint</styleUrl>
-          <Point><altitudeMode>absolute</altitudeMode><extrude>1</extrude>
-
-            <coordinates>45.67966882969211,40.087224858445765,13137.260234226394</coordinates>
-          </Point>
-          <altitudeMode>absolute</altitudeMode>
-        </Placemark>
-        
-        <Placemark>
-          <styleUrl>#redPoint</styleUrl>
-          <Point><altitudeMode>absolute</altitudeMode><extrude>1</extrude>
-
-            <coordinates>45.70084232819444,40.08364998459612,13332.044178352167</coordinates>
-          </Point>
-          <altitudeMode>absolute</altitudeMode>
-        </Placemark>
-        
-        <Placemark>
-          <styleUrl>#redPoint</styleUrl>
-          <Point><altitudeMode>absolute</altitudeMode><extrude>1</extrude>
-
-            <coordinates>45.72165275952802,40.07992847130059,13526.747049749261</coordinates>
-          </Point>
-          <altitudeMode>absolute</altitudeMode>
-        </Placemark>
-        
-        <Placemark>
-          <styleUrl>#redPoint</styleUrl>
-          <Point><altitudeMode>absolute</altitudeMode><extrude>1</extrude>
-
-            <coordinates>45.7421179392801,40.07606369506538,13721.366178160224</coordinates>
-          </Point>
-          <altitudeMode>absolute</altitudeMode>
-        </Placemark>
-        
-        <Placemark>
-          <styleUrl>#redPoint</styleUrl>
-          <Point><altitudeMode>absolute</altitudeMode><extrude>1</extrude>
-
-            <coordinates>45.762251696091056,40.07225337948063,13915.898851442094</coordinates>
-          </Point>
-          <altitudeMode>absolute</altitudeMode>
-        </Placemark>
-        
-        <Placemark>
-          <styleUrl>#redPoint</styleUrl>
-          <Point><altitudeMode>absolute</altitudeMode><extrude>1</extrude>
-
-            <coordinates>45.78205881206084,40.06885406928496,14110.342290495471</coordinates>
-          </Point>
-          <altitudeMode>absolute</altitudeMode>
-        </Placemark>
-        
-        <Placemark>
-          <styleUrl>#redPoint</styleUrl>
-          <Point><altitudeMode>absolute</altitudeMode><extrude>1</extrude>
-
-            <coordinates>45.80153743860049,40.065861724643646,14304.693616009426</coordinates>
-          </Point>
-          <altitudeMode>absolute</altitudeMode>
-        </Placemark>
-        
-        <Placemark>
-          <styleUrl>#redPoint</styleUrl>
-          <Point><altitudeMode>absolute</altitudeMode><extrude>1</extrude>
-
-            <coordinates>45.82068560947161,40.06326400722915,14498.94991709754</coordinates>
-          </Point>
-          <altitudeMode>absolute</altitudeMode>
-        </Placemark>
-        
-        <Placemark>
-          <styleUrl>#redPoint</styleUrl>
-          <Point><altitudeMode>absolute</altitudeMode><extrude>1</extrude>
-
-            <coordinates>45.83950191182579,40.06104883520097,14693.108113382326</coordinates>
-          </Point>
-          <altitudeMode>absolute</altitudeMode>
-        </Placemark>
-        
-        <Placemark>
-          <styleUrl>#redPoint</styleUrl>
-          <Point><altitudeMode>absolute</altitudeMode><extrude>1</extrude>
-
-            <coordinates>45.85798538465624,40.059204472289686,14887.165044081745</coordinates>
-          </Point>
-          <altitudeMode>absolute</altitudeMode>
-        </Placemark>
-        
-      </Document>
-    </kml>
-    
+<kml xmlns="http://www.opengis.net/kml/2.2" xmlns:atom="http://www.w3.org/2005/Atom">
+<Document>
+<name>Flight Simulations</name>
+<atom:author>
+<atom:name>ASTRA High Altitude Balloon Flight Planner, University of Southampton</atom:name>
+</atom:author>
+<Style id="landingPin">
+<IconStyle>
+<scale>1.0</scale>
+<Icon>
+<href>http://maps.google.com/mapfiles/ms/micons/red-dot.png</href>
+</Icon>
+</IconStyle>
+</Style>
+<Style id="launchPin">
+<IconStyle>
+<scale>1.0</scale>
+<Icon>
+<href>http://maps.google.com/mapfiles/ms/micons/red-dot.png</href>
+</Icon>
+</IconStyle>
+</Style>
+<Style id="burstPin">
+<IconStyle>
+<scale>1.0</scale>
+<Icon>
+<href>http://maps.google.com/mapfiles/ms/micons/yellow-dot.png</href>
+</Icon>
+</IconStyle>
+</Style>
+<Style id="stratoLine">
+<LineStyle>
+<width>1.0</width>
+</LineStyle>
+</Style>
+<Placemark>
+<name>Simulation 1</name>
+<styleUrl>#stratoLine</styleUrl>
+<LineString>
+<coordinates>
+44.50148786903781,40.23936026278697,1110.9458454964588
+44.49671173973582,40.240682857823856,1226.3387475043228
+44.49175458201467,40.24249447245774,1342.3393818383945
+44.48662998602141,40.24478429751723,1458.9588073049856
+44.48135642867032,40.24753500957206,1576.2084540852525
+44.47612316670926,40.25048413774386,1694.0966250293175
+44.471032030687205,40.25350511791908,1812.6352035840148
+44.46609584084245,40.25660150373264,1931.8385453219605
+44.46132751223576,40.259776553967896,2051.721184769645
+44.457256839051475,40.26298259715513,2172.3834385129526
+44.45432333934905,40.266172458333244,2293.9151002649983
+44.45251886845594,40.26934138878448,2416.329846166814
+44.45183460358925,40.272487574761065,2539.6408205161247
+44.45231560079864,40.27549423442852,2663.8665912758297
+44.45406920301452,40.27811073318402,2789.033114079542
+44.45709062215966,40.280333901808,2915.155236684708
+44.46137472007709,40.282168256263574,3042.249432894589
+44.466895126979225,40.28361627332058,3170.324315092145
+44.473401829198124,40.28467092266394,3299.293166973993
+44.48082376230721,40.285331870753474,3429.1444187749285
+44.48915338091815,40.28560002605666,3559.895202396791
+44.498383503672855,40.28547498782529,3691.5635145122187
+44.508254828532124,40.285035243010455,3824.1549072485777
+44.518309277094346,40.28442407797398,3957.663593011055
+44.52852984945879,40.283646257820195,4092.108132226363
+44.53890827907718,40.28270373812731,4227.508200848866
+44.54943279909463,40.281600265018454,4363.884034366127
+44.55991242410113,40.28043431929716,4501.253388864077
+44.570237546598435,40.279262287447864,4639.635012526834
+44.58040361565085,40.27808543370671,4779.04984995823
+44.59040599734692,40.27690471414431,4919.519503858404
+44.6002523268463,40.27571332935205,5061.064530276905
+44.61012800806761,40.27438967353969,5203.676962794083
+44.620096091543466,40.27289077436856,5347.368111188124
+44.63015445296042,40.2712156634565,5492.1611621753345
+44.64030094756526,40.2693633848412,5638.080262797094
+44.65054363143754,40.26733109565351,5785.149482677123
+44.661089881193625,40.26507793927541,5933.369207925841
+44.67201816629053,40.2625844414786,6082.755148531177
+44.68332326942142,40.25984611099186,6233.334477785451
+44.69499979668677,40.25685828074033,6385.135232424821
+44.70704219015178,40.253616114676724,6538.186397143344
+44.71937738522334,40.250174017093734,6692.505008846392
+44.73194064989655,40.24659180615137,6848.109615272419
+44.74473321588334,40.24287746231639,7005.033514679837
+44.757758173211556,40.23903826026491,7163.3117366011475
+44.77102644936846,40.235075609623166,7322.981739033968
+44.78456106793031,40.231001186078664,7484.06513546831
+44.79844525631365,40.2268866369155,7646.5077183945405
+44.812685094354556,40.22275458802703,7810.333689691302
+44.82727467545372,40.21861799336866,7975.583819215075
+44.84220858997526,40.21448938020559,8142.300946266257
+44.857481944449084,40.21038082766166,8310.530201207428
+44.87306658066684,40.20625043876801,8480.302724180217
+44.888907982232205,40.20198010579069,8651.625940250904
+44.905005803254994,40.19756011270536,8824.544843872574
+44.92136149193644,40.19298568318114,8999.107901559191
+44.937976266337756,40.188252661758995,9175.36550708993
+44.954851125617175,40.18335751717845,9353.370185206806
+44.972051557971795,40.17833287972685,9533.16613838604
+44.98976367319624,40.17327443360449,9714.779078625543
+45.00799953556823,40.16817731551904,9898.270843288992
+45.02676375512745,40.16302609109582,10083.710665196098
+45.04605440601942,40.15780589631723,10271.1696716156
+45.06586850510188,40.152502224610004,10460.723154353193
+45.08620412383829,40.14710076620747,10652.457030501071
+45.1070722479015,40.14160302143835,10846.631461322637
+45.128476566445634,40.136018255646775,11042.234236305214
+45.15040966669667,40.13035369201447,11237.794483383952
+45.17286173235327,40.1246168108733,11433.30334384768
+45.19582235127688,40.11881512596257,11628.760392389626
+45.21928073359543,40.112956130868966,11824.16494080303
+45.24322590630445,40.10704725541839,12019.511164102363
+45.26724604462984,40.10118903184383,12214.80368126462
+45.290941104809605,40.095478213461746,12410.029354356166
+45.314317589861325,40.089914455791664,12605.187306334592
+45.33738243423945,40.08449721244117,12800.277034457724
+45.36014243971588,40.07922603533495,12995.29523703362
+45.38260424026566,40.07410058502338,13190.2421197783
+45.40477433548828,40.069120669945235,13385.112399059648
+45.426659064585664,40.06428621945604,13579.905835158957
+45.44826444613493,40.05959710720783,13774.616861294384
+45.469469742684055,40.05509217097647,13969.245062547587
+45.48995000882014,40.05086927602898,14163.795050895644
+45.50970931142954,40.04692262749676,14358.26065952438
+45.52878015334953,40.04323936410026,14552.639804368804
+45.54718148174292,40.03980722702082,14746.930371250974
+45.564929604485705,40.036614738936606,14941.129626848087
+</coordinates>
+<altitudeMode>absolute</altitudeMode>
+</LineString>
+</Placemark>
+<Placemark>
+<name>Balloon Launch</name>
+<styleUrl>#launchPin</styleUrl>
+<Point>
+<coordinates>
+44.50582,40.23859,1000.00000
+</coordinates>
+<altitudeMode>absolute</altitudeMode>
+</Point>
+</Placemark>
+<Placemark>
+<name>Balloon burst (Simulation 1)</name>
+<styleUrl>#burstPin</styleUrl>
+<description>Burst altitude: 23819 m.</description>
+<Point>
+<coordinates>
+45.73137,40.52456,23818.58463
+</coordinates>
+<altitudeMode>absolute</altitudeMode>
+</Point>
+</Placemark>
+<Placemark>
+<name>Payload landing (Simulation 1)</name>
+<styleUrl>#landingPin</styleUrl>
+<description>Flight time: 1 hours, 31 minutes and 24 seconds.</description>
+<Point>
+<coordinates>
+45.83409,40.55482,0.00000
+</coordinates>
+<altitudeMode>absolute</altitudeMode>
+</Point>
+</Placemark>
+</Document>
+</kml>

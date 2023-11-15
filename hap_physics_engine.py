@@ -287,7 +287,7 @@ def main():
     # a_y                          # acceleration along y                           (m/s^2)
     # a_z                          # acceleration along z                           (m/s^2)
     # mu_                          # gas/air molar mass ratio
-    dt   = 0.01                    # 0.001; numerical integration step                     (s)
+    dt   = 3                    # 0.001; numerical integration step                     (s)
     dt_pr = 60                      # cout step                                      (s)
     # Fa                           # buoyant force                                  (N)
     # Fg                           # gravitational force                            (N)
@@ -351,7 +351,8 @@ def main():
     lat = latitude_start
     
     # min_longitude, max_latitude = [longitude_start, longitude_start + 0.2], [latitude_start, latitude_start + 0.2]
-    myGFSlink = GFS_Handler(longitude_start, latitude_start, datetime.datetime.now()+datetime.timedelta(days=1))
+    UTC_offset = 4
+    myGFSlink = GFS_Handler(longitude_start, latitude_start, datetime.datetime.now() - datetime.timedelta(seconds=UTC_offset * 3600)-datetime.timedelta(days=7))
     myGFSlink.downloadForecast()    
     temperature, pressure, u_wind, v_wind = myGFSlink.interpolateData('t', 'p', 'd','s')
     
@@ -376,7 +377,7 @@ def main():
     #     cout << "z=" << z <<endl
     # */
     
-    latlon_to_csv = pd.DataFrame(columns=['Latitude', 'Longitude', 'Altitude'])
+    latlon_to_csv = pd.DataFrame(columns=['Longitude', 'Latitude', 'Altitude'])
     flight_info = pd.DataFrame(columns=['Altitude', 'vx', 'vy', 'mgas'])
 
     while (z <= h_max - 10000 and z > 0): # h_max + dh_plus
@@ -389,8 +390,11 @@ def main():
             
             i = n
            
-        T_atm = Tatm[i] + (z - Hatm[i]) * (Tatm[i + 1] - Tatm[i]) / (Hatm[i + 1] - Hatm[i])
-        P_atm = Patm[i] * exp(-Beta[i] * (z - Hatm[i]))
+        #T_atm = Tatm[i] + (z - Hatm[i]) * (Tatm[i + 1] - Tatm[i]) / (Hatm[i + 1] - Hatm[i])
+        #P_atm = Patm[i] * exp(-Beta[i] * (z - Hatm[i]))
+        T_atm = temperature(lat, lon, z, myGFSlink.getGFStime(datetime.datetime.now() - datetime.timedelta(seconds=UTC_offset * 3600)-datetime.timedelta(days=7)+datetime.timedelta(seconds=t))) 
+        P_atm = pressure(lat, lon, z, myGFSlink.getGFStime(datetime.datetime.now() - datetime.timedelta(seconds=UTC_offset * 3600)-datetime.timedelta(days=7)+datetime.timedelta(seconds=t))) * 100
+        
         rho_atm = P_atm / xmu_air / T_atm
         T_gas = T_atm + dT_gas
         
@@ -560,9 +564,8 @@ def main():
                 eps0 = eps
             # cout << V_b_eq << "\t" << eps << "\t" << eps0 << "\t" << eps1 <<endl
         
-        
-        vx = u_wind(lat, lon, z, myGFSlink.getGFStime(datetime.datetime.now()+datetime.timedelta(days=1, seconds=t)))
-        vy = v_wind(lat, lon, z, myGFSlink.getGFStime(datetime.datetime.now()+datetime.timedelta(days=1, seconds=t)))
+        vx = u_wind(lat, lon, z, myGFSlink.getGFStime(datetime.datetime.now() - datetime.timedelta(seconds=UTC_offset * 3600)-datetime.timedelta(days=7)+datetime.timedelta(seconds=t)))
+        vy = v_wind(lat, lon, z, myGFSlink.getGFStime(datetime.datetime.now() - datetime.timedelta(seconds=UTC_offset * 3600)-datetime.timedelta(days=7)+datetime.timedelta(seconds=t)))
         
         Rx     = 2 * So_b / f_S 
         x_cone = eps * Rx
@@ -616,7 +619,7 @@ def main():
         x = x + dx # u - vx 
         y = y + dy # v - vy    
         
-        # from x y to lat lon
+        # from x y to  lon lat
         lon =  pix_rev * (longitude_start * pix + dx / (R_earth + z) / cos(latitude_start * pix))
         lat = pix_rev * (latitude_start * pix + dy / (R_earth + z))
         
@@ -650,7 +653,7 @@ def main():
             print("Current Alt = ", z)
             print("Current Lon = ", lon)
             print("Current Lat = ", lat)
-            new_row = {'Latitude': lat, 'Longitude': lon, 'Altitude': z}
+            new_row = {'Longitude':  lon, 'Latitude': lat, 'Altitude': z}
             info_row = {'Altitude': z, 'vx': vx, 'vy': vy, 'mgas': m_gas}
             latlon_to_csv = latlon_to_csv.append(new_row, ignore_index=True)
             flight_info = flight_info.append(info_row, ignore_index=True)

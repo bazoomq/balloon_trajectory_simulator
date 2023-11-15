@@ -148,7 +148,8 @@ class GFS_Handler(object):
                           'ugrdprs': 'U Winds',
                           'vgrdprs': 'V Winds'}
 
-    def __init__(self, lat, lon, date_time, HD=True, forecastDuration=4,
+    def __init__(self, lat, lon, date_time, HD=True, 
+                 forecastDuration=4,
         use_async=True, requestSimultaneous=True, debugging=False,
         progressHandler=None):
         # Initialize Parameters
@@ -352,8 +353,10 @@ class GFS_Handler(object):
                 self.requestLatitude[0], self.requestLatitude[1],
                 requestLongitude[0], requestLongitude[1]
             )
+        #requestURL = 'https://nomads.ncep.noaa.gov/dods/gfs_0p50/gfs20231113/gfs_0p50_12z.ascii?tmpprs[11:12][0:46][254:266][78:102]'
+        print("URL: ", requestURL)
         return requestURL
-
+    
     def _NOAA_request(self, requestVar, cycle, requestTime):
         """
         Parameters
@@ -778,7 +781,7 @@ class GFS_Handler(object):
         # PROCESS DATA AND PERFORM CONVERSIONS AS REQUIRED
 
         # Convert temperatures from Kelvin to Celsius
-        data_matrices['tmpprs'] -= 273.15
+        # data_matrices['tmpprs'] -= 273.15
 
         # Convert geopotential height to geometric altitude
         altitudeMatrix = (data_matrices['hgtprs'] * earthRadius /
