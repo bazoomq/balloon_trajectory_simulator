@@ -4,11 +4,11 @@ This code implements a simulation of the flight of a balloon starting from a giv
 
 ## File System
 
-* hap_physics_engine.py: the main code to run, it simulates the balloon flight (contain all balloon's params)
-* astra_GFS.py: for interacting with the NOAA's Global Forecast System, original code - [ASTRA Simulator](https://github.com/sobester/astra_simulator)
-* global_tools.py: tools for interacting with GFS, original code - [ASTRA Simulator](https://github.com/sobester/astra_simulator)
-* interpolate.py: interpolate the data from GFS, original code - [ASTRA Simulator](https://github.com/sobester/astra_simulator); it does interpolation of data with 4 parametres: lon, lat, press, time
-* kml_generator.py: generate .kml file from list of coordinates (lat, lon, alt)
+* `hap_physics_engine.py`: the main code to run, it simulates the balloon flight (contain all balloon's params)
+* `astra_GFS.py`: for interacting with the NOAA's Global Forecast System, original code - [ASTRA Simulator](https://github.com/sobester/astra_simulator)
+* `global_tools.py`: tools for interacting with GFS, original code - [ASTRA Simulator](https://github.com/sobester/astra_simulator)
+* `interpolate.py`: interpolate the data from GFS, original code - [ASTRA Simulator](https://github.com/sobester/astra_simulator); it does interpolation of data with 4 parametres: lon, lat, press, time
+* `kml_generator.py`: generate .kml file from list of coordinates (lat, lon, alt)
 
 ## astra_GFS.py more detailed
 
@@ -19,7 +19,7 @@ The difference compare to the original ASTRA function are following:
 * the temperature is calculated with Kelvin (not Celsius)
 
 ## Run the code 
-* activate HAP environment in the server (hap)
+* activate HAP environment in the server `(hap)`
 * run `python hap_physics_engine.py` command  to start simulation
 
 The output of the simulation is coordinates which can be converted to .kml file (using `kml_generator.py`) and put in Google Earth to see the trajectory on the map.
