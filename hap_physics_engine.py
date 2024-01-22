@@ -350,7 +350,6 @@ def main():
     lon = longitude_start
     lat = latitude_start
     
-    # min_longitude, max_latitude = [longitude_start, longitude_start + 0.2], [latitude_start, latitude_start + 0.2]
     UTC_offset = 4
     myGFSlink = GFS_Handler(longitude_start, latitude_start, datetime.datetime.now() - datetime.timedelta(seconds=UTC_offset * 3600)-datetime.timedelta(days=7))
     myGFSlink.downloadForecast()    
@@ -609,17 +608,11 @@ def main():
         
         dx = vx * dt
         dy = vy * dt
-
-        # # from lat lon to x y
-        # x = x_0 + (R_earth + z) * cos(latitude_start * pix) * (lon * pix - longitude_start * pix)
-        # y = y_0 + (R_earth + z) * (lat * pix - latitude_start * pix)
-        
-        
         
         x = x + dx # u - vx 
         y = y + dy # v - vy    
         
-        # from x y to  lon lat
+        # from (x, y) to  (lat, lon)
         lon =  pix_rev * (longitude_start * pix + dx / (R_earth + z) / cos(latitude_start * pix))
         lat = pix_rev * (latitude_start * pix + dy / (R_earth + z))
         
@@ -664,13 +657,3 @@ def main():
 
 if __name__ == "__main__":
     main()
-
-
-
-# V
-
-# 40.23822423742247,44.5079306954846
-# 40.238809862507416,44.51110169829215
-# 40.240032916754764,44.51530271713292
-# 40.24146523010262,44.51938411995484
-# 40.24372178933436,44.522827890893105
