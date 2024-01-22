@@ -5,9 +5,9 @@ This code implements a simulation of the flight of a balloon starting from a giv
 ## File System
 
 * hap_physics_engine.py: the main code to run, it simulates the balloon flight (contain all balloon's params)
-* astra_GFS.py: for interacting with the NOAA's Global Forecast System, original code - ![ASTRA Simulator](https://github.com/sobester/astra_simulator)
-* global_tools.py: tools for interacting with GFS, original code - ![ASTRA Simulator](https://github.com/sobester/astra_simulator)
-* interpolate.py: interpolate the data from GFS, original code - ![ASTRA Simulator](https://github.com/sobester/astra_simulator); it does interpolation of data with 4 parametres: lon, lat, press, time
+* astra_GFS.py: for interacting with the NOAA's Global Forecast System, original code - [ASTRA Simulator](https://github.com/sobester/astra_simulator)
+* global_tools.py: tools for interacting with GFS, original code - [ASTRA Simulator](https://github.com/sobester/astra_simulator)
+* interpolate.py: interpolate the data from GFS, original code - [ASTRA Simulator](https://github.com/sobester/astra_simulator); it does interpolation of data with 4 parametres: lon, lat, press, time
 * kml_generator.py: generate .kml file from list of coordinates (lat, lon, alt)
 
 ## astra_GFS.py more detailed
